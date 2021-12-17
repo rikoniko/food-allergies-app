@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/posts', 'PostController@index');
+
+Route::get('/top',function(){
+    return view('/recipes/top');
+});
